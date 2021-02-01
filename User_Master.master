@@ -1,0 +1,211 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User_Master.master.cs" Inherits="User_Master" %>
+
+<%@ Register assembly="ASPNetFlashVideo.NET3" namespace="ASPNetFlashVideo" tagprefix="ASPNetFlashVideo" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<%--<head id="Head1" runat="server" >
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        #twitter
+        {
+            height: 34px;
+            margin-left: 1px;
+        }
+    </style>
+
+</head>--%>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Torrent movies</title>
+<meta name="keywords" content="black wall, free CSS template, dark wooden strips, templatemo" />
+<meta name="description" content="Black Wall - free CSS template from templatemo.com" />
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        .style4
+        {
+            height: 43px
+        }
+        .style5
+        {
+            height: 61px
+        }
+    </style>
+
+</head>
+<%--<body>
+
+    <form id="form2" runat="server">
+
+<div id="templatemo_wrapper">
+	
+	<div id="templatemo_header">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    Welcome : <a href="Profile_desc.aspx"><asp:Label ID="Label1" runat="server"></asp:Label></a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; 
+            <a href="Logout.aspx">LogOutt</a>&nbsp;
+    	<div id="site_title"><h1><a>Torrent movies</a></h1></div>
+        
+        <div id="twitter">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            Search : 
+            <asp:TextBox ID="TextBox1" runat="server" Height="18px"></asp:TextBox>
+            <asp:Button ID="Button1" runat="server" Height="21px" onclick="Button1_Click1" 
+                Text="Search" BackColor="Gray" 
+                    BorderColor="Black" ForeColor="White"/>
+            &nbsp;&nbsp;&nbsp;&nbsp;</div>--%>
+            <body>
+
+                <form id="form1" runat="server">
+
+<div id="templatemo_wrapper">
+	
+	<div id="templatemo_header">
+    
+    	<div id="site_title"><h1>Torrent Movies</h1></div>
+        
+        <div id="twitter"><a></a>&nbsp;&nbsp;&nbsp;&nbsp; Welcome :&nbsp;<asp:Label 
+                ID="Label1" runat="server" ForeColor="White"></asp:Label>&nbsp;&nbsp; 
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+		
+		
+        <div id="templatemo_menu">
+            <ul>
+                <li class="page_item page-item-2"><a href="User_Home.aspx">Home</a></li>
+           <li class="page_item page-item-2"><a href="Profile_desc.aspx">Profile</a></li>
+
+    
+          <li class="page_item page-item-2"><a href="Check Availability.aspx">Book Ticket</a></li>
+          <li class="page_item page-item-2"><a href="Gallery.aspx">Gallery</a></li>
+                <li class="page_item page-item-2"><a href="Logout.aspx">LogOut</a></li>
+            </ul>  	
+        </div> <!-- end of templatemo_menu -->
+       <div id="templatemo1_menu">
+      <ul>
+                  <li><a href = "Upcoming_Movies.aspx"> Upcoming Movies</a></li>
+          <li><a href = "Newreleased_movies.aspx">New Released</a></li>
+                <li class="page_item page-item-2"><a href="Contactus.aspx">Contact Us</a></li>
+          <li class="page_item page-item-2"><a href="About Us.aspx">About Us</a></li>
+            <li ><a href="Upcoming Movie trailers.aspx">Movie Promos</a></li>   
+            
+      </ul>
+<!-- end of templatemo1_menu -->
+      <div id="templatemo2_menu">
+      <ul >
+      <li> <a href ="Bollywood.aspx">Bollywood</a></li>   
+      <li> <a href ="Hollywood.aspx">Hollywood</a></li>  
+      </ul>
+      </div>
+
+         <!-- end of templatemo2_menu -->
+    </div>
+    </div>
+    <!-- end of header -->
+                </div>
+                &nbsp;&nbsp;&nbsp;<br />
+&nbsp;<br />
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <div id="templatemo_main">
+    	<div class="col_w960">
+		
+            <div class="col_w450 float_l">
+            	<table style="width:89%; height: 437px;">
+                    <tr>
+                        <td class="style4">
+                            <asp:Image ID="Image1" runat="server" Height="357px" 
+                                ImageUrl="~/images/fast_and_furious_6.jpg" Width="495px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style5">
+                        <marquee scrolldelay="30" style="width: 490px; margin-left: 0px">
+    <img src="images/iron.jpeg" height="50" width='40'/><img src="images/fast_and_furious_6.jpg" height="50" width='40'/>
+    <img src="images/scry.jpeg" height="50" width='40'/><img src="images/dis cnc.jpeg" height="50" width='40'/>
+    <img src="images/aurn.jpeg" height="50" width='40'/><img src="images/kai 1.bmp" height="50" width='40'/>
+    <img src="images/pi.jpg" height="50" width='40'/><img src="images/asshii.jpeg" height="50" width='40'/>
+</marquee>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="col_w450 float_r">
+           	  	<h2>Movie Trailer&#39;s........</h2>
+  <ul class="lp_frontpage">
+                	<table style="width:94%;">
+                        <tr>
+                            <td>
+                                <ASPNetFlashVideo:FlashVideo ID="FlashVideo1" runat="server" width="280px" 
+                                    height="195px" 
+                                    VideoURL="~/movie trailer/Hotel Transylvania - Official Trailer.flv" 
+                                    AutoPlay = "false">
+                                </ASPNetFlashVideo:FlashVideo>
+                            </td>
+                            <td>
+                                <ASPNetFlashVideo:FlashVideo ID="FlashVideo2" runat="server" width="280px" 
+                                    height="195px" 
+                                    VideoURL="~/movie trailer/_HD_Trailer_Fall_In_Love_Like_A_Star_-_Yang_Mi_L_m.flv" 
+                                    AutoPlay = "false">
+                                </ASPNetFlashVideo:FlashVideo>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            
+                            <td> 
+                            <strong><center>Hotel Transylvania</center></strong>
+                                </td>
+                            
+                              <td>
+                                <strong><center>Fall in Love Like A Star</center></strong></td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ASPNetFlashVideo:FlashVideo ID="FlashVideo4" runat="server" width="280px" 
+                                    height="195px" VideoURL="~/movie trailer/NEW SPECTRE TRAILER.flv" 
+                                    AutoPlay = "false">
+                                </ASPNetFlashVideo:FlashVideo>
+                            </td>
+                            <td>
+                                <ASPNetFlashVideo:FlashVideo ID="FlashVideo5" runat="server" width="280px" 
+                                    height="195px" 
+                                    VideoURL="~/movie trailer/The Hunger Games- Mockingjay Part 2 Official Trailer – “We March Together”.flv" 
+                                    AutoPlay = "false">
+                                </ASPNetFlashVideo:FlashVideo>
+                            </td>
+                           
+                        </tr>
+                        <tr>
+                            <td 
+                                <strong><center><strong>Spectre</strong></center></strong></td>
+                            <td>
+                                <strong><center>The Hunger Games Mockingjay Part 2</center>
+                                </strong>
+                                </td>
+                                                    </tr>
+                        </table>
+                </ul>
+				
+                <div class="cleaner">
+                
+       
+                </div>    
+                &nbsp;</div>
+		</div>
+       
+        
+    </div>
+                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Designed By Ronak Parikh || 
+                Mehul Agja ......
+</form>
+</body>
+</html>

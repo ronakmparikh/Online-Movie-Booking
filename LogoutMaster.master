@@ -1,0 +1,177 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="LogoutMaster.master.cs" Inherits="LogoutMaster" %>
+
+<%@ Register assembly="ASPNetFlashVideo.NET3" namespace="ASPNetFlashVideo" tagprefix="ASPNetFlashVideo" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+<head id="Head1" runat="server" >
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Torrent movies</title>
+<link href="templatemo_style.css" rel="stylesheet" type="text/css" />
+
+    <style type="text/css">
+        #twitter
+        {
+            height: 45px;
+        }
+        .style4
+        {
+            height: 214px;
+            width: 462px;
+        }
+        .style5
+        {
+            height: 85px;
+            width: 462px;
+        }
+        .style6
+        {
+            text-align: center;
+        }
+        </style>
+
+</head>
+<body>
+
+
+   
+    <form id="form1" runat="server">
+<div id="templatemo_wrapper">
+	
+	<div id="templatemo_header">
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<div id="site_title"><h1>
+            Torrent Movies</h1></div>
+        
+        <div id="twitter"></div>
+		
+        <div id="templatemo_menu">
+            <ul>
+                <li><a href="New_Home.aspx" class="current">Home</a></li>
+                <li><a href="User Registration.aspx">Registration</a></li>
+                <li><a href="Userlogin.aspx">Login</a></li>
+                <li><a href="lAbout Us.aspx">About Us</a></li>
+                <li class="last"><a href="lContactus.aspx">FeedBack</a></li>
+            </ul>  	
+        </div> <!-- end of templatemo_menu -->
+       <div id="templatemo1_menu">
+      <ul>
+                
+                <li><a href="lGallery.aspx">Gallery</a></li>
+               <li><a href="lUpcoming_Movies.aspx">Upcoming Movies</a></li>
+                 <li><a href="lNewreleased_movies.aspx">New Realesed </a></li>
+               <li><a href="lUpcoming Movie trailers.aspx" >Upcoming Promos</a></li>
+          <li><a href="lLatest Movie trailers.aspx">Movie Trailers</a></li>
+      </ul>
+      </div>
+
+         <!-- end of templatemo2_menu -->
+        </div>
+    </div>
+    <!-- end of header -->
+        &nbsp;<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    
+                     
+                  
+    </asp:ContentPlaceHolder>
+    <!-- end of middle -->
+    
+    <div id="templatemo_main">
+    	<div class="col_w960">
+		
+            <div class="col_w450 float_l">
+            	<table style="width:89%; height: 411px;">
+                    <tr>
+                        <td class="style4">
+                            <asp:Image ID="Image1" runat="server" Height="305px" 
+                                ImageUrl="~/images/fast_and_furious_6.jpg" Width="495px" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="style5">
+                        <marquee scrolldelay="30" style="width: 490px"; loop="infinite" behavior="scroll" continuescroll ="scroll">
+    <img src="images/iron.jpeg" height="50" width='60'/><img src="images/fast_and_furious_6.jpg" height="50" width='60'/>
+    <img src="images/scry.jpeg" height="50" width='60'/><img src="images/dis cnc.jpeg" height="50" width='60'/>
+    <img src="images/aurn.jpeg" height="50" width='60'/><img src="images/kai 1.bmp" height="50" width='60'/>
+    <img src="images/pi.jpg" height="50" width='60'/><img src="images/asshii.jpeg" height="50" width='60'/>
+     <img src="images/aurn.jpeg" height="50" width='60'/><img src="images/kai 1.bmp" height="50" width='60'/>
+    <img src="images/pi.jpg" height="50" width='60'/><img src="images/asshii.jpeg" height="50" width='60'/>
+</marquee>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="col_w450 float_r">
+           	  	<h2>Movie Trailer&#39;s........</h2>
+  <ul class="lp_frontpage">
+                	<table style="width:94%;">
+                        <tr>
+                            <td>
+                                <ASPNetFlashVideo:FlashVideo ID="FlashVideo1" runat="server" width="280px" 
+                                    height="195px" 
+                                    VideoURL="~/movie trailer/Hotel Transylvania - Official Trailer.flv" 
+                                    AutoPlay = "false">
+                                </ASPNetFlashVideo:FlashVideo>
+                            </td>
+                            <td>
+                                <ASPNetFlashVideo:FlashVideo ID="FlashVideo2" runat="server" width="280px" 
+                                    height="195px" 
+                                    VideoURL="~/movie trailer/_HD_Trailer_Fall_In_Love_Like_A_Star_-_Yang_Mi_L_m.flv" 
+                                    AutoPlay = "false">
+                                </ASPNetFlashVideo:FlashVideo>
+                            </td>
+                            
+                        </tr>
+                        <tr>
+                            
+                            <td> 
+                            <strong><center>Hotel Transylvania</center></strong>
+                                </td>
+                            
+                              <td>
+                                <strong><center>Fall in Love Like A Star</center></strong></td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <ASPNetFlashVideo:FlashVideo ID="FlashVideo4" runat="server" width="280px" 
+                                    height="195px" VideoURL="~/movie trailer/NEW SPECTRE TRAILER.flv" 
+                                    AutoPlay = "false">
+                                </ASPNetFlashVideo:FlashVideo>
+                            </td>
+                            <td>
+                                <ASPNetFlashVideo:FlashVideo ID="FlashVideo5" runat="server" width="280px" 
+                                    height="195px" 
+                                    VideoURL="~/movie trailer/The Hunger Games- Mockingjay Part 2 Official Trailer – “We March Together”.flv" 
+                                    AutoPlay = "false">
+                                </ASPNetFlashVideo:FlashVideo>
+                            </td>
+                           
+                        </tr>
+                        <tr>
+                            <td 
+                                <strong><center><strong>Spectre</strong></center></strong></td>
+                            <td>
+                                <strong><center>The Hunger Games Mockingjay Part 2</center>
+                                </strong>
+                                </td>
+                                                    </tr>
+                        </table>
+                </ul>
+				
+                <div class="cleaner">
+                
+       
+                </div>    
+                &nbsp;</div>
+		</div>
+       
+        
+    </div>
+                                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                   Designed By Ronak Parikh || Mehul Agja......
+</form>
+</body>
+</html>
